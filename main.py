@@ -14,7 +14,7 @@ def main(input_dict):
 
     # phase 2 save results
     insightsS3Link = Datashop.save_results("filename", service_results[0],
-                                           datatype="str")  # specify the dtype of result (image,csv,graph,json,str,int)
+                                           datatype="image")  # specify the dtype of result (image,csv,graph,json,str,int)
 
     # calculate job duration
     duration = time.time() - start
