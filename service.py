@@ -64,7 +64,7 @@ def run(jobID):
   content_image = load_img(content_path)
   style_image = load_img(style_path)
 
-  stylized_image = smodel(tf.constant(content_image), tf.constant(style_image))[0]
+  stylized_image = model(tf.constant(content_image), tf.constant(style_image))[0]
 
   # for multiple results return list of resutls   results = [result_1,result_2,result_3]
 
