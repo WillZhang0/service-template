@@ -10,7 +10,7 @@ class predict(Resource):
     def post():
         #try:
         input_dict = request.get_json()
-        insights_payload , duration = main(input_dict)
+        insights_payload, duration = main(input_dict)
         #return {"result": "success", "duration": duration, "insightFileURL": insights_payload}
         #except Exception as e:
             ## updating job with FAILED status.
